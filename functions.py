@@ -1,21 +1,31 @@
 # TODO: Implement the following functions based on the descriptions.
 
-def reverse_list(lst):
+def reverse_list():
     """
     Reverses the given list.
     :param lst: List of integers.
     :return: A list with elements in reverse order.
     """
-    pass  # Implement this
-
-def count_occurrences(lst, element):
+    lst = [1,2,3,4]
+    lst.reverse()
+    print(lst)
+reverse_list()
+        
+def count_occurrences(lst):
     """
     Counts how many times the given element appears in the list.
     :param lst: List of elements.
     :param element: Element to count.
     :return: Integer count of occurrences.
     """
-    pass  # Implement this
+    lst=[]
+    lst = lst.count(6)
+    print(lst)
+
+lst=[1,2,3,4,5,6,6]
+count_occurrences(lst)
+
+    
 
 def get_keys_with_value(dct, value):
     """
@@ -26,14 +36,20 @@ def get_keys_with_value(dct, value):
     """
     pass  # Implement this
 
-def merge_sorted_lists(lst1, lst2):
+def merge_sorted_lists():
     """
     Merges two sorted lists into one sorted list.
     :param lst1: First sorted list.
     :param lst2: Second sorted list.
     :return: Merged sorted list.
     """
-    pass  # Implement this
+    lst1 = [1,2,3,4]
+    lst2 = [5,6,7,8]
+    newlst = lst1 + lst2
+    print(newlst)
+merge_sorted_lists()
+
+ 
 
 def find_second_largest(numbers):
     """
@@ -43,7 +59,8 @@ def find_second_largest(numbers):
     """
     pass  # Implement this
 
-def is_anagram(str1, str2):
+
+def is_anagram():
     """
     Checks if two strings are anagrams.
     
@@ -55,7 +72,17 @@ def is_anagram(str1, str2):
     :param str2: Second string.
     :return: True if the strings are anagrams, False otherwise.
     """
-    pass  # Implement this
+    str1 = 'gum'
+    str2= 'mug'
+    for letters in str1 and str2:
+        if letters in str1 == letters in str2:
+            print("True")
+        else:
+            print("False")
+is_anagram()
+
+
+
 
 
 def flatten_list(nested_list):
@@ -64,22 +91,38 @@ def flatten_list(nested_list):
     :param nested_list: List of lists.
     :return: A flat list with all elements.
     """
-    pass  # Implement this
+pass  # Implement this
 
 
-def remove_duplicates(lst):
+def remove_duplicates():
     """
     Removes duplicates from the list while maintaining order.
     :param lst: List of elements.
     :return: List without duplicates.
     """
-    pass  # Implement this
+    a = [1, 2, 2, 3, 4, 4, 5]
+    lst= []
+    [lst.append(val) for val in a if val not in lst]
+    print(lst)
+remove_duplicates()
 
-def find_common_elements(lst1, lst2):
+def find_common_elements(lst1,lst2):
     """
     Finds common elements between two lists.
     :param lst1: First list.
     :param lst2: Second list.
     :return: List of common elements.
     """
-    pass  # Implement this
+    lst1 = set(lst1)
+    lst2 = set(lst2)
+ 
+    if (lst1 & lst2):
+        print(lst1 & lst2)
+    else:
+        print("No common elements") 
+
+lst1 = [1, 2, 3, 4, 5]
+lst2 = [5, 6, 7, 8, 9]
+        
+find_common_elements(lst1,lst2)
+          
